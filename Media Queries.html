@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+<style>
+    * { box-sizing: border-box;}
+div { text-align: center;}
+
+.left { 
+    background-color: green;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    float: left;}
+.center { 
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 60%;
+    float: left;}
+.right { 
+    background-color: green; 
+    color: white;
+    padding: 20px;
+    width: 20%;
+    float: left;}
+@media (max-width : 500px){
+     .left, .center, .right{
+        width: 100%;
+         
+    }
+}
+
+
+</style>    
+</head>
+<body>
+    <h1>Media Queries</h1>
+<hr>
+<p>Resize the Browser Window.</p>
+    <div class="left"><h2>Left Menu</h2></div>
+
+    <div class="center"><h2>Center Menu</h2></div>
+
+    <div class="right"><h2>Right Menu</h2></div>
+
+
+
+
+</body>
+</html>
